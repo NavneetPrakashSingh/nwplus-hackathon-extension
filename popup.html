@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src *; style-src 'self' http://* 'unsafe-inline'; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        /* padding: 10%; */
+        min-width: 300px;
+      }
+      button {
+        width: 100%;
+        outline: none;
+      }
+      .card-header {
+        background: #2c3e50;
+      }
+      .btn-link,
+      .btn-link:hover {
+        color: white;
+        text-decoration: none;
+      }
+      .header-text {
+        background-color: #1abc9c;
+        padding: 20px;
+        color: white;
+      }
+      .header-text-size {
+        font-size: 20px;
+      }
+      .body-text-size {
+        font-size: 14px;
+      }
+      .main-body {
+        padding: 10px;
+      }
+      #formControlRange-word,
+      #formControlRange-zoom,
+      #formControlRange-character {
+        background: linear-gradient(
+          to right,
+          #1abc9c 0%,
+          #1abc9c 0%,
+          #fff 0%,
+          #fff 100%
+        );
+        border: solid 1px #1abc9c;
+        border-radius: 8px;
+        height: 7px;
+        width: 356px;
+        outline: none;
+        transition: background 450ms ease-in;
+        -webkit-appearance: none;
+      }
+      .body-headings {
+        padding-bottom: 5px;
+      }
+      .form-slider-class {
+        padding-bottom: 5px;
+      }
+      .padding-top-button {
+        padding-top: 15px;
+      }
+      .common-theme-button {
+        background-color: #1abc9c;
+        color: white;
+      }
+      .message-theme {
+        background-color: #1abc9c;
+        color: white;
+        padding: 7px;
+        margin-bottom: 5px;
+      }
+      .settings-icon {
+        height: 20px;
+        width: 20px;
+      }
+      .hide-class {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="">
+      <div class="row header-text">
+        <div class="text-center w-100 header-text-size">SimplifyMe</div>
+      </div>
+      <div class="body-text-size main-body">
+        <div class="row">
+          <div class="col">
+            <div id="message-theme" class="message-theme hide-class">
+              Reset to previous settings is successful!
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="text-left w-100 header-text-size col body-headings">
+            Visual Accessibility
+            <span
+              data-toggle="tooltip"
+              data-html="true"
+              title="Click to reset values"
+              ><img
+                id="settings-icon-image"
+                class="settings-icon"
+                src="settings.svg"
+                alt="reset_image"
+            /></span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col form-slider-class">
+            <label for="formControlRange-zoom">Adjust zoom level</label>
+            <input
+              value="0"
+              type="range"
+              class="form-control-range"
+              id="formControlRange-zoom"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col form-slider-class">
+            <label for="formControlRange-word">Adjust word spacing</label>
+            <input
+              value="0"
+              type="range"
+              class="form-control-range"
+              id="formControlRange-word"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col form-slider-class">
+            <label for="formControlRange-character"
+              >Adjust character spacing</label
+            >
+            <input
+              value="0"
+              type="range"
+              class="form-control-range"
+              id="formControlRange-character"
+            />
+          </div>
+        </div>
+        <hr />
+        <div class="text-left w-100 header-text-size col body-headings">
+          Vocal Accessibility
+          <span
+            data-toggle="tooltip"
+            data-html="true"
+            title="Select the text on page and click on hear selected text to listen the text"
+            ><img class="settings-icon" src="ask.svg"
+          /></span>
+        </div>
+        <div class="row padding-top-button">
+          <div class="col-12">
+            <button
+              type="button"
+              id="save-configuration"
+              class="btn common-theme-button"
+            >
+              Hear Selected Text
+            </button>
+          </div>
+          <!-- <div class="col-6">
+            <button
+              type="button"
+              id="reset-configuration"
+              class="btn common-theme-button"
+            >
+              Reset
+            </button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
