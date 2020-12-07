@@ -38,3 +38,6 @@ Making the world a better place to live for everyone. This extension would help 
 
 ## What's next for SimplifyMe (Chrome Extension for Web Accessibility)
 More features and integration of APIs making it more easy for users with visual disability to navigate and make web more accessible for them
+
+## Submission Link
+https://devpost.com/software/simplifyme-chrome-extension-for-web-accessibility
