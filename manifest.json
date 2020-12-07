@@ -1,0 +1,17 @@
+{
+  "name": "Getting Started Example",
+  "version": "1.0",
+  "description": "Build an Extension!",
+  "manifest_version": 2,
+  "permissions": ["activeTab", "declarativeContent", "storage"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "options_page": "options.html",
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "web_accessible_resources": ["settings.svg"],
+  "content_security_policy": "script-src 'self' 'unsafe-eval' https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js https://code.jquery.com/jquery-3.4.1.slim.min.js; object-src 'self'"
+}
