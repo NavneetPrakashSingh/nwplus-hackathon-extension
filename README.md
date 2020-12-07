@@ -1,4 +1,4 @@
-# nwplus-hackathon-extension
+# SimplifyMe (Chrome extension for people with visual disability)
 ## Inspiration
 People with visual disability or impairments find it difficult to read text on web pages due to the small size of font. Since the hackathon's theme revolved around diversity, inclusivity and accessibility, I wanted to leverage this opportunity to make web more accessible for people with visual imparity or disability
 
