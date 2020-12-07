@@ -10,6 +10,13 @@ My solution is a chrome extension that enables users to make web more accessible
 - Text to speech capability i.e. User can hear the sentences they have chosen to listen.
 
 
+## Screenshots
+<img src="https://user-images.githubusercontent.com/7118271/101407237-71767700-388f-11eb-967a-a218a5a57eef.png" alt="drawing" width="350"/>
+<img src="https://user-images.githubusercontent.com/7118271/101407245-74716780-388f-11eb-94f0-fb13a82ab647.png" alt="drawing" width="550"/>
+<img src="https://user-images.githubusercontent.com/7118271/101407253-776c5800-388f-11eb-8326-de992c61397e.png" alt="drawing" width="550"/>
+<img src="https://user-images.githubusercontent.com/7118271/101407260-79361b80-388f-11eb-8642-0091d932950b.png" alt="drawing" width="550"/>
+
+
 ## How I built it
 By leveraging chrome’s inbuilt API to access data on webpage.
 
